@@ -35,7 +35,7 @@
       <label>Enter the the time in years :- </label>
       <input type="text" id="time"><br><br>
       <button type="button" onclick="calculate()">Calculate</button>
-      <button>Clear</button>
+      <button type="button" onclick="clearo()">Clear</button>
       <br><br>
       <label id="emi">EMI :- </label><br>
       <label id="amt">Total payable account :- </label>
@@ -52,7 +52,6 @@
   let mat = Math;
 
   function calculate() {
-    // body...
     p = parseInt(document.getElementById('amount').value);
     r = parseInt(document.getElementById('interest').value);
     t = parseInt(document.getElementById('time').value);
@@ -73,9 +72,14 @@
         document.getElementById('emi').innerHTML = "EMI :- Rs " + emi.toFixed(2);
         document.getElementById('amt').innerHTML="Total payable account :- Rs "+amt.toFixed(2);
         console.log(p);
-        // printf("\nThe EMI is = Rs %f\n", emi);
-        // printf("\nTotal payable amount = Rs %f\n", emi*t*12);
       }
+  }
+
+  function clearo() {
+    document.getElementById('amount').value="";
+    document.getElementById('interest').value="";
+    document.getElementById('time').value="";
+    console.log('cleared...');
   }
 
 </script>
