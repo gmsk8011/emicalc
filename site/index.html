@@ -11,35 +11,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
   </head>
 <body>
-<!--   <header>
-    <nav id="header-nav" class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="index.html" class="pull-left">
-            <div id="logo-img"></div>
-          </a>
-          <div class="navbar-brand">
-            <a href="index.html"><h1></h1></a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header> -->
-  <h1>EMI Calculator</h1>
+  <div class="container">
+    
+  <h1>EMI Calculator</h1><br>
   <div>
     <form>
-      <label>Enter the amount in rupees :- </label>
-      <input type="text" id="amount"><br><br>
-      <label>Enter the interest rate :- </label>
-      <input type="text" id="interest"><br><br>
-      <label>Enter the the time in years :- </label>
-      <input type="text" id="time"><br><br>
+      <label class="lab1">Enter the amount in rupees :- </label>
+      <input type="text" id="amount"><br>
+      <label class="lab2">Enter the interest rate :- </label>
+      <input type="text" id="interest"><br>
+      <label class="lab3">Enter the the time in years :- </label>
+      <input type="text" id="time"><br>
+      <div id="btn">        
       <button type="button" onclick="calculate()">Calculate</button>
       <button type="button" onclick="clearo()">Clear</button>
+      </div>
       <br><br>
       <label id="emi">EMI :- </label><br>
       <label id="amt">Total payable account :- </label>
     </form>    
+  </div>
   </div>
 </body>
 <script>
