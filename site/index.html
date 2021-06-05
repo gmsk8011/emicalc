@@ -58,7 +58,7 @@
         let m = t * 12;
         let i = r / 1200;
         emi = (p * i * Math.pow( 1+i, m))/( Math.pow( 1+i, m) - 1);
-        amt = (p+emi);
+        amt = emi*12*t;
 
         document.getElementById('emi').innerHTML = "EMI :- Rs " + emi.toFixed(2);
         document.getElementById('amt').innerHTML="Total payable account :- Rs "+amt.toFixed(2);

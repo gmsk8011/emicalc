@@ -186,7 +186,12 @@ p, li
 
 @media (min-width: 768px) and (max-width: 991px)
 {
-
+  .lab1{
+    margin-right: 0px;
+  }
+  .lab3{
+    padding-right: 19px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px)
