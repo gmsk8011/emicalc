@@ -47,8 +47,8 @@
   let amt;
   let mat = Math;
 
-  function calculate() {
-
+  function calculate() 
+  {
     p = parseInt(document.getElementById('amount').value);
     r = parseInt(document.getElementById('interest').value);
     t = parseInt(document.getElementById('time').value);
@@ -70,7 +70,8 @@
       document.getElementById('amt').innerHTML="Total payable amount :- Rs "+amt.toFixed(2);
     }
   }
-  function clearo() {
+  function clearo() 
+  {
     document.getElementById('amount').value="";
     document.getElementById('interest').value="";
     document.getElementById('time').value="";
