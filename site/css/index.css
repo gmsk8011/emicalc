@@ -82,23 +82,6 @@ input
   text-decoration: none;
 }
 
-output
-{
-  background-color: white;
-  border: 1px solid black;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 20px;
-  padding: 10px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  font-family: 'Odibee Sans', cursive;
-  text-decoration: none;
-}
-
 h4
 {
   margin-left: 50px;
