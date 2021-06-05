@@ -43,26 +43,27 @@
   let mat = Math;
 
   function calculate() {
+
     p = parseInt(document.getElementById('amount').value);
     r = parseInt(document.getElementById('interest').value);
     t = parseInt(document.getElementById('time').value);
     
     if (r===0)
-      {
-        emi = p/(t*12);
-        document.getElementById('emi').innerHTML = "EMI :- " + emi;
-        
-      }
-      else if (r>0)
-      {
-        let m = t * 12;
-        let i = r / 1200;
-        emi = (p * i * Math.pow( 1+i, m))/( Math.pow( 1+i, m) - 1);
-        amt = emi*12*t;
+    {
+      emi = p/(t*12);
+      document.getElementById('emi').innerHTML = "EMI :- " + emi;
+    }
 
-        document.getElementById('emi').innerHTML = "EMI :- Rs " + emi.toFixed(2);
-        document.getElementById('amt').innerHTML="Total payable account :- Rs "+amt.toFixed(2);
-      }
+    else if (r>0)
+    {
+      let m = t * 12;
+      let i = r / 1200;
+      emi = (p * i * Math.pow( 1+i, m))/( Math.pow( 1+i, m) - 1);
+      amt = emi*12*t;
+
+      document.getElementById('emi').innerHTML = "EMI :- Rs " + emi.toFixed(2);
+      document.getElementById('amt').innerHTML="Total payable account :- Rs "+amt.toFixed(2);
+    }
   }
 
   function clearo() {
