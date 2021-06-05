@@ -13,14 +13,14 @@
   <body>
   <h1>EMI Calculator</h1>
   <div class="container row">
-    <div class="col-md-4 col-sm-4 col-xs-4">
+    <div class="col-md-4 col-sm-6 col-xs-6">
     <form>
       <label class="lab1">Enter the amount in rupees :- </label>
       <label class="lab2">Enter the interest rate :- </label>
       <label class="lab3">Enter the time in years :- </label>
       <div id="btn">        
-      <button type="button" onclick="calculate()">Calculate</button>
-      <button type="button" onclick="clearo()">Clear</button>
+      <button type="button" onclick="calculate()" class="pull-left">Calculate</button>
+      <button type="button" onclick="clearo()" class="pull-right">Clear</button>
       </div>
     </form>    
   </div>
@@ -31,7 +31,7 @@
       <input type="text" id="time"><br>      
     </form>    
   </div>
-    <div class="col-md-5 col-sm-5 col-xs-5">
+    <div class="col-md-5 col-sm-12 col-xs-12">
       <form>
         <label id="emi">EMI :- </label><br>
         <label id="amt">Total payable amount :- </label>

@@ -170,6 +170,97 @@ p, li
 
 @media (max-width: 767px)
 {
+  h1
+{
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 50px;
+  text-decoration: underline;
+  margin-bottom: 50px;
+}
+
+div
+{
+  align-items: center;
+}
+
+h2, h3, label
+{
+  font-size: 1.5em;
+  font-family: 'Odibee Sans', cursive;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+button
+{
+  background-color: black;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  border-radius: 20px;
+  margin: 15px;
+  margin-top: 40px;
+  font-family: 'Odibee Sans', cursive;
+  text-decoration: none;
+}
+
+input
+{
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-family: 'Odibee Sans', cursive;
+  text-decoration: none;
+}
+
+h4
+{
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 3em;
+  font-family: 'Odibee Sans', cursive;
+  text-decoration: none;
+}
+
+h5
+{
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 2em;
+}
+
+p, li
+{
+  font-size: 1.3em;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.pic
+{
+  /* border: 1px solid black; */
+  height: 600px;
+  width: 900px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 }
 
