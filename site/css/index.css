@@ -176,9 +176,9 @@ p, li
   color: black;
   font-weight: bold;
   font-family: 'Odibee Sans', cursive;
-  font-size: 50px;
+  font-size: 30px;
   text-decoration: underline;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 div
@@ -188,7 +188,7 @@ div
 
 h2, h3, label
 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-family: 'Odibee Sans', cursive;
   text-decoration: none;
   margin-top: 20px;
@@ -206,7 +206,7 @@ button
   font-size: 17px;
   border-radius: 20px;
   margin: 15px;
-  margin-top: 40px;
+  margin-top: 20px;
   font-family: 'Odibee Sans', cursive;
   text-decoration: none;
 }
@@ -219,7 +219,7 @@ input
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 11px;
   border-radius: 20px;
   padding: 5px;
   margin-top: 20px;

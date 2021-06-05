@@ -18,13 +18,19 @@
       <label class="lab1">Enter the amount in rupees :- </label>
       <label class="lab2">Enter the interest rate :- </label>
       <label class="lab3">Enter the time in years :- </label>
-      <div id="btn">        
-      <button type="button" onclick="calculate()" class="pull-left">Calculate</button>
-      <button type="button" onclick="clearo()" class="pull-right">Clear</button>
+      <div id="btn" class="row">
+      <div class="col-md-6 col-sm-6 col-xs-6">
+              <button type="button" onclick="calculate()">Calculate</button>
+
+      </div>   
+      <div class="col-md-6 col-sm-6 col-xs-6">
+              <button type="button" onclick="clearo()">Clear</button>
+
+      </div>     
       </div>
     </form>    
   </div>
-  <div class="col-md-3 col-sm-3 col-xs-3">
+  <div class="col-md-3 col-sm-6 col-xs-6">
     <form>
       <input type="text" id="amount"><br>
       <input type="text" id="interest"><br>
