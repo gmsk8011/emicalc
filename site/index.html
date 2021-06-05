@@ -34,7 +34,7 @@
     <div class="col-md-5 col-sm-5 col-xs-5">
       <form>
         <label id="emi">EMI :- </label><br>
-        <label id="amt">Total payable account :- </label>
+        <label id="amt">Total payable amount :- </label>
       </form>    
     </div>
   </div>
@@ -67,7 +67,7 @@
       amt = emi*12*t;
 
       document.getElementById('emi').innerHTML = "EMI :- Rs " + emi.toFixed(2);
-      document.getElementById('amt').innerHTML="Total payable account :- Rs "+amt.toFixed(2);
+      document.getElementById('amt').innerHTML="Total payable amount :- Rs "+amt.toFixed(2);
     }
   }
   function clearo() {
