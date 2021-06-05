@@ -11,52 +11,67 @@
     <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
   </head>
 <body>
-<!--   <header>
-    <nav id="header-nav" class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="index.html" class="pull-left">
-            <div id="logo-img"></div>
-          </a>
-          <div class="navbar-brand">
-            <a href="index.html"><h1></h1></a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header> -->
-  <h1>EMI Calculator</h1>
+  <div class="container">
+    
+  <h1>EMI Calculator</h1><br>
   <div>
     <form>
-      <label>Enter the amount in rupees :- </label>
-      <input type="text" id="amount"><br><br>
-      <label>Enter the interest rate :- </label>
-      <input type="text" id="interest"><br><br>
-      <label>Enter the the time in years :- </label>
-      <input type="text" id="time"><br><br>
-      <button>Calculate</button>
-      <button>Clear</button>
+      <label class="lab1">Enter the amount in rupees :- </label>
+      <input type="text" id="amount"><br>
+      <label class="lab2">Enter the interest rate :- </label>
+      <input type="text" id="interest"><br>
+      <label class="lab3">Enter the the time in years :- </label>
+      <input type="text" id="time"><br>
+      <div id="btn">        
+      <button type="button" onclick="calculate()">Calculate</button>
+      <button type="button" onclick="clearo()">Clear</button>
+      </div>
       <br><br>
-      <label>EMI :- </label>
-      <input type="text" id="emi"><br><br>
-      <label>Total payable account :- </label>
-      <input type="text" id="total"><br><br>
+      <label id="emi">EMI :- </label><br>
+      <label id="amt">Total payable account :- </label>
     </form>    
+  </div>
   </div>
 </body>
 <script>
-  if (r==0)
-    {
-      emi = p/(t*12);
-      printf("The EMI is = Rs %f\n", emi);
-    }
-    else if (r>0)
-    {
-      m = t * 12;
-      i = r / 1200;
-      emi = (p * i * pow( 1+i, m))/( pow( 1+i, m) - 1);
-      printf("\nThe EMI is = Rs %f\n", emi);
-      printf("\nTotal payable amount = Rs %f\n", emi*t*12);
-    }
+
+  let p;
+  let r;
+  let t;
+  let emi;
+  let amt;
+  let mat = Math;
+
+  function calculate() {
+    p = parseInt(document.getElementById('amount').value);
+    r = parseInt(document.getElementById('interest').value);
+    t = parseInt(document.getElementById('time').value);
+    
+    if (r===0)
+      {
+        emi = p/(t*12);
+        document.getElementById('emi').innerHTML = "EMI :- " + emi;
+        
+      }
+      else if (r>0)
+      {
+        let m = t * 12;
+        let i = r / 1200;
+        emi = (p * i * Math.pow( 1+i, m))/( Math.pow( 1+i, m) - 1);
+        amt = (p+emi);
+
+        document.getElementById('emi').innerHTML = "EMI :- Rs " + emi.toFixed(2);
+        document.getElementById('amt').innerHTML="Total payable account :- Rs "+amt.toFixed(2);
+        console.log(p);
+      }
+  }
+
+  function clearo() {
+    document.getElementById('amount').value="";
+    document.getElementById('interest').value="";
+    document.getElementById('time').value="";
+    console.log('cleared...');
+  }
+
 </script>
 </html>
